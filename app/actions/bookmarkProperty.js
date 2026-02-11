@@ -3,7 +3,6 @@ import connectDB from '@/config/database';
 import User from '@/models/User';
 import { getSessionUser } from '@/utils/getSessionUser';
 import { revalidatePath } from 'next/cache';
-import { use } from 'react';
 
 async function bookmarkProperty(propertyId) {
   await connectDB();
